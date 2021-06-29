@@ -1,7 +1,6 @@
 {
   "name": "Dizainassau",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niseme/Dizainassau.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Niseme/Dizainassau/issues"
+  },
+  "homepage": "https://github.com/Niseme/Dizainassau#readme",
+  "description": ""
 }
