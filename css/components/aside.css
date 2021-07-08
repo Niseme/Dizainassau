@@ -1,0 +1,32 @@
+.aside .meniu-box {
+  border-bottom: 1px solid black;
+  padding: 20px 3px 60px 10px;
+}
+
+.meniu-box:last-of-type {
+  border: none;
+}
+
+.meniu-box .st-box {
+  margin-bottom: 20px;
+}
+.meniu-box .meniu-list {
+  padding: 10px 0 0 0;
+}
+.meniu-box .meniu-list i {
+  margin-right: 15px;
+}
+.meniu-box .meniu-list2 {
+  padding: 10px 0 0 0;
+}
+.meniu-box .meniu-list2 i {
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-right: 4px;
+  font-size: 10px;
+  color: green;
+}
+.meniu-box .meniu-list2 .gray {
+  color: gray;
+  display: inline-block;
+}
