@@ -22,10 +22,11 @@
   font-size: 16px;
   float: left;
   text-decoration: none;
+  position: relative;
 }
 
 .header .form {
-  color: antiquewhite
+  color: antiquewhite;
   margin-bottom: 10px;
   margin-left: 50px;
   line-height: 20px;
@@ -43,15 +44,17 @@
 }
 
 .header .list {
-  display: none; 
+  z-index: 1;
+  display: none;
   width: 200px;
   position: absolute;
   background-color: rgb(140, 157, 187);
+  left: 0;
+  top: 30px;
 }
 
-.drop-down:hover .list  {
+.drop-down:hover .list {
   display: inline-block;
-  position: relative;
 }
 
 .header .list a {
