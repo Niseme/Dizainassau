@@ -1,0 +1,43 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-template-areas:
+    "welcome welcome"
+    "running running"
+    "activity suggested";
+}
+main .welcome {
+  grid-area: welcome;
+}
+main .running-courses {
+  grid-area: running;
+}
+main .activity {
+  grid-area: activity;
+}
+main .suggested-courses {
+  grid-area: suggested;
+}
+
+main .trio-block {
+  display: grid;
+  background-color: beige;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  grid-template-areas:
+    "title action"
+    "content content";
+  align-items: center;
+}
+main .trio-block > .title {
+  grid-area: title;
+  margin-right: 600px;
+}
+main .trio-block > .action {
+  grid-area: action;
+}
+
+main .trio-block > .content {
+  grid-area: content;
+}
