@@ -21,6 +21,7 @@ main .suggested-courses {
 }
 
 main .trio-block {
+  width: 100%;
   display: grid;
   background-color: beige;
   grid-template-columns: auto auto;
@@ -32,12 +33,103 @@ main .trio-block {
 }
 main .trio-block > .title {
   grid-area: title;
-  margin-right: 600px;
+  font: caption;
+  color: rgb(25, 34, 167);
+  float: left;
 }
 main .trio-block > .action {
   grid-area: action;
+  float: right;
+  font: caption;
+  color: rgb(25, 34, 167);
+  border: 2px solid violet;
+  border-radius: 10px;
+  display: inline-block;
+  justify-self: end;
+  background-color: thistle;
 }
 
 main .trio-block > .content {
   grid-area: content;
+}
+
+main .running-courses.trio-block > .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+main .running-courses.trio-block > .content .card {
+  border: 1px solid rgb(27, 20, 20);
+  border-radius: 10px;
+  padding: 5px;
+}
+main .running-courses.trio-block > .content .card .card-title {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+main .running-courses .content .card .card-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "course-name "
+    "additional-info";
+}
+main .running-courses .content .card .card-content .course-name {
+  grid-area: course-name;
+  display: inline-block;
+  font: caption;
+  color: rgb(24, 141, 141);
+  font-style: italic;
+  padding: 5px 0px 60px 10px;
+}
+main
+  .running-courses
+  .content
+  .card
+  .card-content
+  .course-name
+  .additional-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "author free-speace"
+    "name free-space-bar";
+}
+main .running-courses .content .card .card-content .additional-info > .author {
+  grid-area: author;
+  padding-left: 10px;
+}
+main
+  .running-courses
+  .content
+  .card
+  .card-content
+  .additional-info
+  > .free-space {
+  grid-area: free-space;
+  float: right;
+  padding-right: 10px;
+}
+main .running-courses .content .card .card-content .additional-info .name {
+  grid-area: name;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+main
+  .running-courses
+  .content
+  .card
+  .card-content
+  .additional-info
+  .free-space-bar {
+  grid-area: free-space-bar;
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
