@@ -150,3 +150,24 @@ main .trio-block > .graphic {
   display: inline-block;
   width: 100%;
 }
+
+main .trio-block > .suggested-courses-content {
+  grid-area: content;
+  padding: 10px;
+  background: rgb(24, 141, 141);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "art-box"
+    "design-box";
+}
+main .trio-block > .suggested-courses-content .art-box {
+  grid-area: art-box;
+}
+main .trio-block > .suggested-courses-content .design-box {
+  grid-area: design-box;
+}
+
+main .trio-block > .suggested-courses-content .box {
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+}
