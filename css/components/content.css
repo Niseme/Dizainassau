@@ -144,6 +144,9 @@ main
   padding-bottom: 10px;
 }
 
-main .activity .trio-block img {
+main .trio-block > .graphic {
   grid-area: content;
+  float: left;
+  display: inline-block;
+  width: 100%;
 }
