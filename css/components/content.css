@@ -59,7 +59,7 @@ main .running-courses.trio-block > .content {
   gap: 20px;
 }
 
-main .running-courses.trio-block > .content .card {
+main .running-courses.trio-block .content .card {
   border: 1px solid rgb(27, 20, 20);
   border-radius: 10px;
   padding: 5px;
@@ -100,6 +100,16 @@ main
     "author free-speace"
     "name free-space-bar";
 }
+main .running-courses .content .card .card-content .additional-info {
+  background: blueviolet;
+  padding: 5px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "author free-space"
+    "name free-space-bar";
+}
 main .running-courses .content .card .card-content .additional-info > .author {
   grid-area: author;
   padding-left: 10px;
@@ -132,4 +142,8 @@ main
   float: right;
   padding-right: 10px;
   padding-bottom: 10px;
+}
+
+main .activity .trio-block img {
+  grid-area: content;
 }
