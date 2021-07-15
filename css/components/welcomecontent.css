@@ -1,0 +1,44 @@
+main .welcome {
+  grid-area: welcome;
+}
+
+.welcome {
+  background: rgb(177, 177, 224);
+  padding-top: 30px;
+  padding-left: 50px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "welcome-content pencils";
+}
+
+.welcome .welcome-content {
+  grid-area: welcome-content;
+}
+.welcome .greetings {
+  line-height: 50px;
+  font-size: 20px;
+  font-family: fantasy;
+  font-style: italic;
+}
+.welcome .education {
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.welcome .browse-budge {
+  background: rgb(67, 67, 175);
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  display: inline;
+}
+
+.welcome .pencils {
+  grid-area: pencils;
+  height: 200px;
+  display: inline-block;
+  float: right;
+  margin-left: 100px;
+  

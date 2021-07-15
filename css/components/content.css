@@ -70,6 +70,19 @@ main .running-courses.trio-block > .content .card .card-title {
   padding: 10px;
   text-align: center;
 }
+main .running-courses.trio-block > .content .card .ux-design {
+  background: rgb(179, 121, 46);
+}
+main .running-courses.trio-block > .content .card .animation {
+  background: rgb(113, 53, 224);
+}
+main .running-courses.trio-block > .content .card .ilustration {
+  background: rgb(46, 170, 179);
+}
+main .running-courses.trio-block > .content .card .adobe-ilustrator {
+  background: rgb(179, 46, 146);
+}
+
 main .running-courses .content .card .card-content {
   display: grid;
   grid-template-columns: 1fr;
