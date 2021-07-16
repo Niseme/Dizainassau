@@ -59,62 +59,48 @@ main .running-courses.trio-block > .content {
   gap: 20px;
 }
 
-main .running-courses.trio-block .content .card {
+main .running-courses .card {
   border: 1px solid rgb(27, 20, 20);
   border-radius: 10px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-main .running-courses.trio-block > .content .card .card-title {
+main .running-courses .card .card-title {
   border: 1px solid black;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
+  width: 100%;
 }
-main .running-courses.trio-block > .content .card .ux-design {
+main .running-courses .card .ux-design {
   background: rgb(179, 121, 46);
 }
-main .running-courses.trio-block > .content .card .animation {
+main .running-courses .card .animation {
   background: rgb(113, 53, 224);
 }
-main .running-courses.trio-block > .content .card .ilustration {
+main .running-courses .card .ilustration {
   background: rgb(46, 170, 179);
 }
-main .running-courses.trio-block > .content .card .adobe-ilustrator {
+main .running-courses .card .adobe-ilustrator {
   background: rgb(179, 46, 146);
 }
 
-main .running-courses .content .card .card-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5px;
-  grid-template-areas:
-    "course-name "
-    "additional-info";
-}
-main .running-courses .content .card .card-content .course-name {
-  grid-area: course-name;
+main .running-courses .course-name {
+  min-height: 100px;
+  line-height: 25px;
   display: inline-block;
   font: caption;
   color: rgb(24, 141, 141);
   font-style: italic;
-  padding: 5px 0px 60px 10px;
+  padding: 5px 0px;
 }
-main
-  .running-courses
-  .content
-  .card
-  .card-content
-  .course-name
-  .additional-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  grid-template-areas:
-    "author free-speace"
-    "name free-space-bar";
-}
-main .running-courses .content .card .card-content .additional-info {
+
+main .running-courses .additional-info {
   background: blueviolet;
+  width: 100%;
+  margin-top: auto;
   padding: 5px;
   gap: 10px;
   display: grid;
@@ -123,38 +109,18 @@ main .running-courses .content .card .card-content .additional-info {
     "author free-space"
     "name free-space-bar";
 }
-main .running-courses .content .card .card-content .additional-info > .author {
+main .running-courses .additional-info > .author {
   grid-area: author;
-  padding-left: 10px;
 }
-main
-  .running-courses
-  .content
-  .card
-  .card-content
-  .additional-info
-  > .free-space {
+main .running-courses .additional-info > .free-space {
   grid-area: free-space;
-  float: right;
-  padding-right: 10px;
 }
-main .running-courses .content .card .card-content .additional-info .name {
+main .running-courses .additional-info .name {
   grid-area: name;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 
-main
-  .running-courses
-  .content
-  .card
-  .card-content
-  .additional-info
-  .free-space-bar {
+main .running-courses .additional-info .free-space-bar {
   grid-area: free-space-bar;
-  float: right;
-  padding-right: 10px;
-  padding-bottom: 10px;
 }
 
 main .trio-block > .graphic {
@@ -164,23 +130,33 @@ main .trio-block > .graphic {
   width: 100%;
 }
 
+/* Suggested courses */
+
 main .trio-block > .suggested-courses-content {
+  display: grid;
+  gap: 20px;
+  padding-left: 10px;
+  width: 100%;
   grid-area: content;
-  padding: 10px;
-  background: rgb(24, 141, 141);
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "art-box"
-    "design-box";
-}
-main .trio-block > .suggested-courses-content .art-box {
-  grid-area: art-box;
-}
-main .trio-block > .suggested-courses-content .design-box {
-  grid-area: design-box;
 }
 
 main .trio-block > .suggested-courses-content .box {
   border: 2px solid blueviolet;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas: "picture sccontent scrating";
+  align-items: center;
+}
+
+main .trio-block .box .sc-picture {
+  grid-area: picture;
+  height: 100px;
+}
+main .trio-block .box .sc-art-title {
+  grid-area: sccontent;
+}
+main .trio-block .box .sc-art-rating {
+  grid-area: scrating;
 }

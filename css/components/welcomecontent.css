@@ -4,12 +4,12 @@ main .welcome {
 
 .welcome {
   background: rgb(177, 177, 224);
-  padding-top: 30px;
   padding-left: 50px;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "welcome-content pencils";
+  height: 300px;
 }
 
 .welcome .welcome-content {
@@ -37,8 +37,9 @@ main .welcome {
 
 .welcome .pencils {
   grid-area: pencils;
-  height: 200px;
+  height: inherit;
+  width: 100%;
   display: inline-block;
   float: right;
-  margin-left: 100px;
-  
+  object-fit: contain;
+}
